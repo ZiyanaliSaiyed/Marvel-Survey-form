@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,36 +10,73 @@
     <p id="description">
       Are you a dedicated fan of Marvel or the Marvel Cinematic Universe (MCU)? Here's an exciting opportunity just for you! This comprehensive survey form is designed to test your Marvel knowledge and dive deep into the incredible cinematic universe. Whether you know every Easter egg, every post-credits scene, or just love the movies and shows, this is your chance to shine and help determine the best Marvel movies across various categories.
     </p>
-    <p>
-      Through this survey, you’ll be exploring some intriguing aspects of Marvel movies, such as:
-    </p>
-    <ul>
-      <li><strong>Character Writing:</strong> Which characters captivated you the most with their depth, development, and engaging story arcs?</li>
-      <li><strong>Soundtrack Mastery:</strong> Which movie’s score or soundtrack gave you goosebumps and enhanced the cinematic experience?</li>
-      <li><strong>Visual Effects Excellence:</strong> Which Marvel movie amazed you with cutting-edge VFX and stunning visuals?</li>
-      <li><strong>Plot Brilliance:</strong> Which storylines had the perfect mix of twists, emotions, and unforgettable moments?</li>
-    </ul>
-    <p>
-      This form is a fantastic way to reflect on your Marvel fandom, share your insights, and join a community of passionate Marvel enthusiasts in selecting the top movies in these key areas. Are you ready to embrace your Marvel expertise and make your voice heard? Take the survey and let’s celebrate the magic of Marvel together!
-    </p>
     <form id="survey-form">
-      <fieldset>
+      <form id="survey-form">
+    <fieldset>
+        <legend>Personal Information</legend>
 
-      <label for="name" id="name-label">Name:</label>
-      <!-- Input Field for Name -->
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required
-      >
-      <br> 
-      <br>
-      <label for="email" id="email">Email:</label>
-      <input type="email" id="name" email="email" placeholder="Enter your email" required>
-      
-        </fieldset>
-      </form>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <!-- ✅ Fix: Correct ID, label, min/max, placeholder -->
+        <label for="number" id="number-label">Enter your age:</label>
+        <input type="number" id="number" name="number" placeholder="Enter your age" min="10" max="100" required>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+    </fieldset>
+</form>
+
+      <fieldset>
+        <legend>Marvel Movie Preferences</legend>
+        <label for="dropdown">Select your favorite Marvel movie:</label>
+        <select id="dropdown" name="movie">
+          <option value="Iron Man">Iron Man</option>
+          <option value="The Incredible Hulk">The Incredible Hulk</option>
+          <option value="Iron Man 2">Iron Man 2</option>
+          <option value="Thor">Thor</option>
+          <option value="Captain America: The First Avenger">Captain America: The First Avenger</option>
+          <option value="The Avengers">The Avengers</option>
+          <option value="Iron Man 3">Iron Man 3</option>
+          <option value="Thor: The Dark World">Thor: The Dark World</option>
+          <option value="Captain America: The Winter Soldier">Captain America: The Winter Soldier</option>
+          <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+          <option value="Avengers: Age of Ultron">Avengers: Age of Ultron</option>
+          <option value="Ant-Man">Ant-Man</option>
+          <option value="Captain America: Civil War">Captain America: Civil War</option>
+          <option value="Doctor Strange">Doctor Strange</option>
+          <option value="Guardians of the Galaxy Vol. 2">Guardians of the Galaxy Vol. 2</option>
+          <option value="Spider-Man: Homecoming">Spider-Man: Homecoming</option>
+          <option value="Thor: Ragnarok">Thor: Ragnarok</option>
+          <option value="Black Panther">Black Panther</option>
+          <option value="Avengers: Infinity War">Avengers: Infinity War</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Your Marvel Preferences</legend>
+        <p>What do you love most about Marvel movies? (Select all that apply)</p>
+        <input type="checkbox" id="characters" name="preference" value="Characters">
+        <label for="characters">Character Development</label><br>
+        <input type="checkbox" id="soundtrack" name="preference" value="Soundtrack">
+        <label for="soundtrack">Soundtrack</label><br>
+        <input type="checkbox" id="visual-effects" name="preference" value="Visual Effects">
+        <label for="visual-effects">Visual Effects</label><br>
+        <input type="checkbox" id="plot" name="preference" value="Plot">
+        <label for="plot">Plot and Storyline</label><br>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Feedback</legend>
+        <label for="comments">Any additional thoughts or comments?</label>
+        <textarea id="comments" name="comments" placeholder="Share your thoughts here..." rows="4"></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
   </body>
 </html>
