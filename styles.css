@@ -1,6 +1,106 @@
-h1{
-  font-family:Arial;
-  color:red;
-  font-size:16px;
-  line-height:1.5;
+/* Apply Apple-style font */
+body {
+  font-family: "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  background-color: #141414; /* Dark Black */
+  background-image: url("background.jpg"); /* Background Image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+  color: #F8F8F8; /* White for readability */
+}
+
+/* Center the form and give it a sleek look */
+form {
+  background: rgba(20, 20, 20, 0.9); /* Semi-transparent dark background */
+  max-width: 600px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.8); /* Red glow */
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #E50914; /* Marvel Red */
+  font-weight: 700;
+  font-size: 28px;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #E50914; 
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #F8F8F8;
+}
+
+/* Input Fields */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #E50914;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #F8F8F8;
+  font-size: 16px;
+}
+
+/* Adjust radio and checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Dropdown Styling */
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #E50914;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #66B2FF; /* Light blue font color */
+  font-size: 16px;
+}
+
+/* Style dropdown options */
+select option {
+  background: black; /* Keeps dropdown dark-themed */
+  color: #66B2FF; /* Light blue text */
+  padding: 5px;
+}
+
+/* Submit Button */
+button {
+  background-color: #E50914;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #B20710; /* Darker red on hover */
 }
